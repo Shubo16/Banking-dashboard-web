@@ -1,12 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+
+
     <title>Banking-dashboard</title>
 </head>
+
 <body>
-    
+
+
+    <main>
+        <div class="dashboard">
+            <header>
+                <nav class="navbar">
+
+                    <a href="#">
+                        <img class="navbar__logo" src="/assets/header/Chase-Bank-Logo.png" alt="">
+                    </a>
+
+                    <ul class="navbar__menu">
+                        <a href="#">
+                            <li class="menu-items">Dashboard</li>
+                        </a>
+                        <a href="#">
+                            <li class="menu-items">Payments</li>
+                        </a>
+                        <a href="#">
+                            <li class="menu-items">Cards</li>
+                        </a>
+                        <a href="#">
+                            <li class="menu-items">Documents</li>
+                        </a>
+                        <a href="#">
+                            <li class="menu-items">Help</li>
+                        </a>
+                    </ul>
+
+                    <ul class="navbar__btns">
+                        <a href="#"><i class="fa fa-cog fa-spin"></i>
+                        </a>
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        <a href="#"><i class="fa-solid fa-moon"></i></a>
+                    </ul>
+
+                    <div class="user-info">
+                        <li>Shubo kobir</li>
+                        <img class="user-info__pfp" src="/assets/header/chaeyoung-icon2.jpeg" alt="user-icon">
+                    </div>
+                </nav>
+            </header>
+
+
+            <!--MAIN DASHBOARD-->
+
+            <main class="dashboard__container">
+                <div class="home">
+                    <div class="accounts">
+
+                        <div class="accounts__title">
+                            <h2>Accounts</h2>
+                            <a href="#"><i class="fa-solid fa-plus"></i></a>
+
+                        </div>
+
+                        <div class="accounts__card euro">
+                            <div class="accounts__card-title">
+                                <h3>£999</h3>
+                                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                            <p>GBP Account</p>
+                            <div class="accounts__card-cards">
+                                <img src="/assets/accounts-section/ccf-purchasing-card-header.png" alt="card">
+                            </div>
+                        </div>
+
+                        <div class="accounts__card dollar">
+                            <div class="accounts__card-title">
+                                <h3>$999</h3>
+                                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                            <p>Dollar Account</p>
+                            <div class="accounts__card-cards">
+                                <!-- <img src="/assets/" alt="card"> -->
+                                <img src="/assets/accounts-section/ccf-purchasing-card-header.png" alt="card">
+                            </div>
+
+                        </div>
+                        <div class="accounts__card crypto">
+                            <div class="accounts__card-title">
+                                <h3>£999</h3>
+                                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                            <p>Crypto Account</p>
+                            <div class="accounts__card-img">
+                                <img src="/assets/accounts-section/pngtree-vector-illustration-of-crytocurrency-ethereum-png-image_3314668.jpg"
+                                    alt="etheruem">
+                                <img src="/assets/accounts-section/bitcoin.jpg" alt="bitcoin">
+                                <img src="/assets/accounts-section/10049.png" alt="man-city">
+
+                            </div>
+                        </div>
+
+                        <div class="accounts__extras">
+                            <div class="hide-balance">
+                                <i class="fa-solid fa-eye-slash"></i>
+                                <p>Hide Balance</p>
+                            </div>
+                            <div class="explore">
+                                <i class="fa-solid fa-table-columns"></i>
+                                <p>Explore</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- MAIN MIDDLE SECTION-->
+
+                    <div class="main">
+
+
+                        <div class="main__search">
+                            <input type="search" type="search" placeholder="Search">
+                            <label for="" class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </label>
+                        </div>
+
+
+                        <div class="main__actions-title">
+                            <h3> Actions</h3>
+                            <p>All actions</p>
+                        </div>
+
+                        <div class="main__actions-container">
+                            <div class="container-grid">
+                                <div class="grid-1">
+                                    <h2>Transfer</h2>
+                                    <img src="/assets/action-icons/pngtree-two-hands-giving-and-receiving-money-vector-png-image_7093789.png"
+                                        alt="Transfer">
+                                </div>
+                                <div class="grid-2">
+                                    <h2>Recieve</h2>
+                                    <img src="/assets/action-icons/pngtree-hands-asking-for-money-and-receiving-png-image_9155227.png"
+                                        alt="Transfer">
+                                </div>
+                                <div class="grid-3">
+                                    <h2>Send To Bub</h2>
+                                    <img src="/assets/action-icons/0dcacf09-f609-4706-818b-dbea08170317_f50ef277.jpg"
+                                        alt="Profile">
+                                </div>
+                                <div class="grid-4">
+                                    <h2>Send to Chaeyoung</h2>
+                                    <img src="/assets/action-icons/TWICE's_Chayeong_손채영_2024_07.jpg"
+                                        alt="Transfer">
+                                </div>
+                            </div>
+                            <div class="container-flex">
+                                <!-- FIRST BOX -->
+                                <div class="grid-5">
+                                    <div class="grid-5__title">
+                                        <h2>Transfers To People</h2>
+                                        <a href="#"><i class="fa fa-cog fa-spin"></i></a>
+                                    </div>
+                                    <!-- <p>****9315</p> -->
+                                </div>
+
+                                <!-- SECOND BOX-->
+
+                                <div class="grid-6">
+                                    <div class="grid-6__title">
+                                        <h2>Spending in June</h2>
+
+                                    </div>
+                                </div>
+
+                                <!--THIRD BOX-->
+                                <div class="grid-7">
+                                    <div class="grid-7__text">
+                                        <h3>Protect Your Account Now</h3>
+                                        <p>Set up two-factor authorisation today and protect all your cards when
+                                            shopping online!</p>
+                                    </div>
+                                    <div class="grid-7__image">
+                                        <img src="/assets/action-icons/pngtree-lock-icon-image_1130134.jpg" alt="lock">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LAST COLUMN MAIN HSITORY SECTION -->
+
+                    <div class="history">
+                        <!-- HISTORY BITES CONTAINER -->
+                        <div class="history__bites">
+                            <div class="visa">Visa Issues</div>
+                            <div class="mortgage">Mortgage items</div>
+                            <div class="overdraft">Overdraft</div>
+                        </div>
+
+                        <!-- TITLE FOR HISTORY COLUMN -->
+                        <div class="history__title">
+                            <h3>History</h3>
+                        </div>
+
+                        <div class="history-container">
+                            <div class="history-today">
+                                <h3>Today 12 June</h3>
+                                <div class="history-items">
+
+                                    <!-- Transaction 1 -->
+
+                                    <div class="history-item">
+                                        <img src="/assets/history-section/logo/002-nike-logos-swoosh-white.webp"
+                                            alt="Nike">
+                                        <div class="text">
+                                            <div class="text-upper">
+                                                <p>Nike Inc</p>
+                                                <p>£21.34</p>
+                                            </div>
+                                            <div class="text-lower">
+                                                <p>Shopping</p>
+                                                <p>11:34AM</p>
+                                                <!-- Additional details if needed -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Transaction 2 (Add more transactions as needed) -->
+<div class="history-item">
+                                        <img src="/assets/history-section/logo/trainline-logo-uk.png"
+                                            alt="TrainLine">
+                                        <div class="text">
+                                            <div class="text-upper">
+                                                <p>TrainLine</p>
+                                                <p>£99.99</p>
+                                            </div>
+                                            <div class="text-lower">
+                                                <p>Transport</p>
+                                                <p>11:04AM</p>
+                                                <!-- Additional details if needed -->
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+
+                            <!-- Uncomment this section if needed for yesterday's transactions -->
+                            <div class="history-yesterday">
+                                <h3>Yesterday 11 June</h3>
+                                <div class="history-items">
+                                    <!-- Transaction 1 -->
+                                    <div class="history-item">
+                                        <img src="/assets/history-section/logo/002-nike-logos-swoosh-white.webp"
+                                            alt="Nike">
+                                        <div class="text">
+                                            <div class="text-upper">
+                                                <p>Nike Inc</p>
+                                                <p>£21.34</p>
+                                            </div>
+                                            <div class="text-lower">
+                                                <p>Shopping</p>
+                                                <p>11:34AM</p>
+                                                <!-- Additional details if needed -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Button for all transactions -->
+                                <div class="history-btn">
+                                    <button class="btn-hover">All Transactions</button>
+                                </div>
+                            
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+    </div>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/01ba1f0795.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
